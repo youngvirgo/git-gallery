@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+section{
+    min-height: 100vh;width: 100%;
+    background-color: rgb(44, 42, 42);
+    display: grid;
+    grid-template-rows: 1fr 20fr 3fr;
+}
+header{
+    width: 100%;display: flex;
+    height: 100px;justify-content: space-between;
+    background-color: rgb(44, 42, 42);grid-row: 1;
+}
+main{
+    width:100%;grid-row: 2;
+    min-height: 700px;display: grid;grid-template-columns: repeat(3,1fr);grid-template-rows: repeat(7,1fr);
+    background-color: rgb(44, 42, 42);
+}
+footer{
+    width: 100%;display: flex;align-items: center;grid-row: 3;
+    height: 300px;flex-direction: column;border-bottom: 1rem;
+    background-color: rgb(36, 34, 34);margin-top: auto;
+}
+.logo1{
+    width: 70px;
+    height: 70px;
+}
+.logo1 img{
+    width: 100%;position: relative;top: 20%;left: 100%;
+    height: 100%;
+}
+nav{
+    width: 50%;
+}
+nav ul{
+    display: flex;justify-content: space-around;
+    position: relative;top: 20%;list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;font-size: 20px;
+}
+ul li a{
+    color: rgb(230, 219, 222);
+}
+ul li a:hover{
+    color: purple;font-size: 30px;
+}
+.logo2{
+    width: 120px;
+    height: 100px;
+}
+.logo2 img{
+    width: 100%;
+    height: 100%;
+}
+h5{
+    color: rgb(167, 165, 164);
+    margin-top: 1rem;
+}
+span{
+    font-weight: 900;
+}
+.icons{
+    margin-top: 1rem;color: rgb(120, 179, 166);
+}
+.icons:hover{
+    color: red;
+}
+.m1{
+    width: 366px;border: 0;
+    height: 285.7px;cursor: pointer;
+}
+.m1 img{
+    width: 100%;background-size: cover;background-repeat: no-repeat;
+    height: 100%;background-position: center;filter: blur(4px);transition: 3s;
+}
+.m1:hover img{
+    filter: blur(0);
+}
+.m1 h1{
+    position: relative;left: 40%;bottom: 50%;color: white;
+    opacity: 0;transition: 3s;
+}
+h1{
+   line-height: 2;width: 30%; 
+}
+.m1:hover h1{
+    opacity: 1;
+}
+h1::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    transition:2s ease-out;
+}
+h1::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    right: 0;
+    transition:2s ease-out;
+}
+div:hover h1::after{
+    width: 100%;
+}
+div:hover h1::before{
+    width: 100%;
+} 
+
